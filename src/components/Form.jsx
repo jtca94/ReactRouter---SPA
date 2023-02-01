@@ -38,7 +38,7 @@ const Form = () => {
             setText('');
             setAlert(<Alert severity="success">
                 <AlertTitle>Informacion enviada</AlertTitle>
-                Pronto nos pondremos en contacto contigo --<strong>Hasta pronto!</strong>
+                Nos pondremos en contacto contigo -- <strong>Hasta pronto!</strong>
             </Alert>)
         }
     };
@@ -58,11 +58,13 @@ const Form = () => {
             />
             <TextField
                 fullWidth
+                multiline
                 error={Boolean(textError)}
                 helperText={textError}
                 label="Cuéntanos tus preguntas"
                 type="text"
                 value={text}
+                minRows='3'
                 sx={{ mb: 3 }}
                 onChange={(event) => setText(event.target.value)}
             />

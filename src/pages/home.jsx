@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div style={{ height: '70vh' }}>
       <div className='row'>
-        <h4 style={{ color: '#FF9494' }} className="text-center my-5">Revisa Nuestro Catálogo</h4>
+        <h4 style={{ color: '#FF9494' }} className="text-center my-5">Bienvenido a Happy Cake!!!</h4>
 
         <div className='col-12 col-sm-6'>
           <Carrousel />

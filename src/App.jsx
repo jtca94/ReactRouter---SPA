@@ -1,10 +1,11 @@
 
 import { Routes, Route } from 'react-router-dom'
 import DrawerAppBar from './components/NavBar'
-import Home from './pages/home'
 import Footer from './components/Footer'
+import Home from './pages/home'
 import Contact from './pages/contact'
 import Products from './pages/products'
+import NotFound from './pages/notFound'
 function App() {
 
 
@@ -26,6 +27,10 @@ function App() {
           <Route
             path='/contact'
             element={<Contact />}
+          />
+          <Route
+            path='*'
+            element={<NotFound />}
           />
         </Routes>
       </main>
